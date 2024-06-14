@@ -18,12 +18,12 @@
                 <br />
                 <br />
                 <strong>Fone:</strong>
-								<a href="https://wa.me/+5511964623699?text=Olá, vi seu site e gostaria de obter um orçamento." target="_blank" title="Abre Página Externa - Whatsapp Web">
-									<span class="text-white">+55 11 96462-3699</span> 
+								<a href="<?= get_theme_mod('social-whatsapp-api') ?>" target="_blank" title="Abre Página Externa - Whatsapp Web">
+									<span class="text-white"><?= get_theme_mod('social-whatsapp') ?></span> 
 								</a>
 								<br>
                 <strong>E-mail:</strong>
-								<a class="text-white" href="mailto:contato@setosplataformas.com.br" title="Link para Enviar um E-mail">contato@setosplataformas.com.br</a>
+								<a class="text-white" href="mailto:<?= get_theme_mod('social-email') ?>" title="Link para Enviar um E-mail"><?= get_theme_mod('social-email') ?></a>
 								<br>
               </p>
               
@@ -61,9 +61,9 @@
           <div class="col-lg-3 col-md-6 footer-newsletter">
             <h4>Redes Sociais</h4>
             <div class="social-links mt-3">
-              <a title="Em Breve" href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a title="Em Breve" href="#" class="google-plus"><i class="bx bxl-linkedin"></i></a>
-              <a title="Em Breve" href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a title="Em Breve" href="<?= get_theme_mod('social-facebook') ?>" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a title="Em Breve" href="<?= get_theme_mod('social-linkedin') ?>" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              <a title="Em Breve" href="<?= get_theme_mod('social-instagram') ?>" class="instagram"><i class="bx bxl-instagram"></i></a>
               <a href="https://wa.me/+5511964623699?text=Olá, vi seu site e gostaria de obter um orçamento." target="_blank" title="Abre Página Externa - Whatsapp Web" class="instagram"><i class="bx bxl-whatsapp"></i></a>
             </div>
           </div>

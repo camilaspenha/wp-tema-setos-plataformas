@@ -26,8 +26,8 @@
     <i class="bi bi-list mobile-nav-toggle"></i>
   </nav>
 
-  <a href="https://wa.me/+5511964623699?text=Olá, vi seu site e gostaria de obter um orçamento." target="_blank" title="Abre Página Externa - Whatsapp Web" class="get-started-btn">
+  <a href="<?= get_theme_mod('social-whatsapp-api') ?>" target="_blank" title="Abre Página Externa - Whatsapp Web" class="get-started-btn">
     <i class="bi bi-whatsapp me-1"></i>
-    <span class="d-none d-xl-inline">+55 11 96462-3699</span>
+    <span class="d-none d-xl-inline"><?= get_theme_mod('social-whatsapp'); ?></span>
   </a>
 </div>

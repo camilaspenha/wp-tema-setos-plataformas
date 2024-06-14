@@ -20,14 +20,14 @@
           <div class="email">
             <i class="bi bi-envelope-at"></i>
             <h4>Email:</h4>
-            <a class="ms-3" href="mailto:contato@setosplataformas.com.br" title="Link para Enviar um E-mail">contato@setosplataformas.com.br</a>
+            <a class="ms-3" href="mailto:<?= get_theme_mod('social-email') ?>" title="Link para Enviar um E-mail">contato@setosplataformas.com.br</a>
           </div>
 
           <div class="phone">
             <i class="bi bi-whatsapp"></i>
             <h4>Fone:</h4>            
-            <a class="ms-3" href="https://wa.me/+5511964623699?text=Olá, vi seu site e gostaria de obter um orçamento." target="_blank" title="Abre Página Externa - Whatsapp Web">
-              +55 11 96462-3699
+            <a class="ms-3" href="<?= get_theme_mod('social-whatsapp-api') ?>" target="_blank" title="Abre Página Externa - Whatsapp Web">
+            <?= get_theme_mod('social-whatsapp'); ?>
             </a>
           </div>
         </div>
