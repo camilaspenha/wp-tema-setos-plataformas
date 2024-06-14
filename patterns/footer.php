@@ -32,46 +32,30 @@
 
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Links</h4>
-            <ul>
-              <li>
-								<i class="bx bx-chevron-right"></i> 
-								<a class="nav-link active" href="<?= get_bloginfo('url') ?>" title="<?= get_bloginfo('url') ?>">Home</a>
-							</li>
-							<li>
-								<i class="bx bx-chevron-right"></i> 
-								<a class="nav-link active" href="<?= get_bloginfo('url') . '/manutencao-plataformas' ?>" title="<?= get_bloginfo('url') ?>">Manutenção</a>
-							</li>
-              <li>
-								<i class="bx bx-chevron-right"></i> 
-								<a class="nav-link active" href="<?= get_bloginfo('url') . '/treinamento-plataformas' ?>" title="<?= get_bloginfo('url') ?>">Treinamento</a>
-							</li>
-              <li>
-								<i class="bx bx-chevron-right"></i> 
-								<a class="nav-link active" href="<?= get_bloginfo('url') . '/contato' ?>" title="<?= get_bloginfo('url') ?>">Contato</a>
-							</li>
-            </ul>
+            <?php
+              $args = array(
+                'menu' => 'links',
+                'container' => 'ul',
+                'before' => '<i class="bx bx-chevron-right"></i>',
+                'theme_location' => 'my-footer-menu-links',
+                'menu_class' => '',
+              );
+              wp_nav_menu( $args );
+            ?> 
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Locação de Plataformas</h4>
-            <ul>
-              <li>
-								<i class="bx bx-chevron-right"></i>
-								<a href="<?= get_bloginfo('url') . '/plataforma-articulada' ?>" title="<?= get_bloginfo('url') . '/plataforma-articulada' ?>">Plataforma Articulada</a>
-							</li>
-              <li>
-							<i class="bx bx-chevron-right"></i>
-								<a href="<?= get_bloginfo('url') . '/plataforma-mastro' ?>" title="<?= get_bloginfo('url') . '/plataforma-mastro' ?>">Plataforma de Mastro</a>
-							</li>
-							<li>
-							<i class="bx bx-chevron-right"></i>
-								<a href="<?= get_bloginfo('url') . '/plataforma-tesoura' ?>" title="<?= get_bloginfo('url') . '/plataforma-tesoura' ?>">Plataforma Tesoura</a>
-							</li>
-              <li>
-							  <i class="bx bx-chevron-right"></i>
-								<a href="<?= get_bloginfo('url') . '/plataforma-telescopica' ?>" title="<?= get_bloginfo('url') . '/plataforma-telescopica' ?>">Plataforma Telescópica</a>
-							</li>
-            </ul>
+            <?php
+              $args = array(
+                'menu' => 'products',
+                'container' => 'ul',
+                'before' => '<i class="bx bx-chevron-right"></i>',
+                'theme_location' => 'my-footer-menu-products',
+                'menu_class' => '',
+              );
+              wp_nav_menu( $args );
+            ?> 
           </div>
 
           <div class="col-lg-3 col-md-6 footer-newsletter">
