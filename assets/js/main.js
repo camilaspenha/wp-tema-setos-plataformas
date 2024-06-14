@@ -39,7 +39,7 @@
     thisForm.querySelector('.error-message').classList.add('d-block');
   }
   
-  let forms = document.querySelectorAll('.php-email-form');
+  let forms = document.querySelectorAll('.php-email-form'); //TODO: add window.onload
 
   forms.forEach( function(e) {
     e.addEventListener('submit', function(event) {
@@ -183,6 +183,21 @@
   }
 
   /**
+   * Nav Menu Add Sub-menu Icon
+   */
+  const addSubMenuIcon = () => {
+    let menuItems = document.querySelectorAll('.menu-item-has-children');
+    menuItems.forEach( function(item) {
+      let subMenu = item.querySelector('.sub-menu');
+      if(subMenu){
+        let subMenuIcon = document.createElement('i');
+        subMenuIcon.classList.add('bi', 'bi-chevron-down');
+        item.querySelector('a').appendChild(subMenuIcon);
+      }
+    });
+  }
+  window.addEventListener('load', addSubMenuIcon)
+  /**
    * Mobile nav toggle
    */
   on('click', '.mobile-nav-toggle', function(e) {
@@ -194,7 +209,7 @@
   /**
    * Mobile nav dropdowns activate
    */
-  on('click', '.navbar .dropdown > a', function(e) {
+  on('click', '.navbar .menu-item-has-children > a', function(e) {
     if (select('#navbar').classList.contains('navbar-mobile')) {
       e.preventDefault()
       this.nextElementSibling.classList.toggle('dropdown-active')
