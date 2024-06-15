@@ -25,6 +25,11 @@
   color: var(--accent);
 }
 
+.inner-page-training-feature i {
+  font-size: 25px;
+  color: var(--accent);
+}
+
 .features .icon-box p {
   font-size: 15px;
   color: #848484;

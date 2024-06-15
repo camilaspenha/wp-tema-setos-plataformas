@@ -1,3 +1,7 @@
+section.inner-page ~ .contact {
+  padding-top: 30px;
+}
+
 .contact .info {
   width: 100%;
   background: #fff;

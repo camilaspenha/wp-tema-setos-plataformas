@@ -15,11 +15,6 @@
 }
 
 .about .content ul i {
-  /*
-  position: absolute;
-  left: 0;
-  top: -3px;
-  */
   font-size: 20px;
   color: var(--accent);
 }

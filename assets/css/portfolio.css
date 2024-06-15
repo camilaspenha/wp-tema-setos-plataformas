@@ -16,11 +16,11 @@
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #ffc451;
+  border: 1px solid var(--accent);
 }
 
 .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #ffc451;
+  background-color: var(--accent);
 }
 
 .portfolio-details .portfolio-info {

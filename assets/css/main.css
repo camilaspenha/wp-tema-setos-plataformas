@@ -195,6 +195,9 @@ section {
   padding: 60px 0;
   overflow: hidden;
 }
+section.inner-page {
+  padding-bottom: 0;
+}
 
 .section-title {
   padding-bottom: 40px;
@@ -247,7 +250,7 @@ button.btn.btn-primary:active {
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs {
-  padding: 75px 0 15px;
+  padding: 100px 0 15px;
   background: whitesmoke;
   min-height: 40px;
 }

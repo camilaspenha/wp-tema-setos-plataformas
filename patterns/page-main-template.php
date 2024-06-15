@@ -8,8 +8,7 @@
  * Post Types: page, wp_template
  * Viewport width: 1400
  */
- global $post;
- $post_slug = $post->post_name;
+ $page_id = get_the_ID();
 ?>
 
 <?php if(is_front_page()) { ?>
@@ -18,32 +17,32 @@
 
   <!-- wp:pattern {"slug":"setos/breadcrumbs-template"} /-->
 
-  <?php switch ($post_slug) {
-    case 'manutencao-plataformas': ?>
+  <?php switch ($page_id) {
+    case 55: ?>
       <!-- wp:pattern {"slug":"setos/page-manutencao-plataformas"} /-->
     <?php break;
 
-    case 'treinamento-plataformas': ?>
+    case 57: ?>
       <!-- wp:pattern {"slug":"setos/page-treinamento-plataformas"} /-->
     <?php break;
 
-    case 'plataforma-articulada': ?>
+    case 59: ?>
       <!-- wp:pattern {"slug":"setos/page-plataforma-articulada"} /-->
     <?php break;
 
-    case 'plataforma-mastro': ?>
+    case 61: ?>
       <!-- wp:pattern {"slug":"setos/page-plataforma-mastro"} /-->
     <?php break;
 
-    case 'plataforma-telescopica': ?>
+    case 63: ?>
       <!-- wp:pattern {"slug":"setos/page-plataforma-telescopica"} /-->
     <?php break;
 
-    case 'plataforma-tesoura': ?>
+    case 65: ?>
       <!-- wp:pattern {"slug":"setos/page-plataforma-tesoura"} /-->
     <?php break;
 
-    case 'contato': ?>
+    case 67: ?>
      <!-- wp:pattern {"slug":"setos/contact-section"} /-->  
       <!-- wp:pattern {"slug":"setos/cta-section"} /-->  
     <?php break;
