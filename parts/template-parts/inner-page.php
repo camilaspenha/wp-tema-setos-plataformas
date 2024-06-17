@@ -21,7 +21,7 @@
               <?php
                 get_template_part( 'parts/template-parts/training-slider','',$slider);
             } else { ?>
-              <div class="image col-lg-5 d-flex justify-content-center" data-aos="fade-right">
+              <div class="image col-lg-5 d-lg-flex justify-content-center" data-aos="fade-right">
                 <img src="<?= $args['inner_main_img'] ?>" alt="" class="img-fluid">
             <?php }?>
           </div> <!-- /End Slider or Img -->
@@ -82,7 +82,7 @@
     </section>
     <?php } ?>
     
-    <section id="portfolio-details" class="portfolio-details text-start">
+    <section id="portfolio-details" class="portfolio-details text-start" data-aos="fade-right">
 
       <div class="section-title">
         <h2>especificações</h2>
