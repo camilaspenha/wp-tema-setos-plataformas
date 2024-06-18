@@ -37,10 +37,9 @@
 }
 
 #hero h2 {
-  /*color: rgba(255, 255, 255, 0.9);*/
-  color: var(--accent);
+  color: rgba(255, 255, 255, 0.9);
   margin: 10px 0 0 0;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 600;
 }
 
