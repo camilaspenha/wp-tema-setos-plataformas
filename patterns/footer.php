@@ -74,7 +74,8 @@
 
     <div class="container">
       <div class="copyright">
-       2024 &copy; Copyright <strong><span>Setos Plataformas</span></strong>
+       2024 &copy; Copyright <strong><span>Setos Locação de Equipamentos Ltda</span></strong> - CNPJ 55.866.767/0001-90
+       
       </div>
     </div>
   </footer><!-- End Footer -->

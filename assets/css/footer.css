@@ -4,7 +4,11 @@
   color: #fff;
   font-size: 14px;
 }
-
+@media screen and (max-width: 768px) {
+  #footer {
+    padding: 0 0 60px 0;
+  }
+}
 #footer .footer-top {
   background: #141414;
   border-bottom: 1px solid #222222;
